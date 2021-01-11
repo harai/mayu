@@ -79,6 +79,7 @@ static bool is_keyboard_device(int fd)
   case BUS_USB:
   case BUS_I8042:
   case BUS_ADB:
+  case BUS_BLUETOOTH:
     break;					// ok
   default:
     return false;			// unmatch bus type
