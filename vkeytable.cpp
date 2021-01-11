@@ -14,7 +14,7 @@ const VKeyTable g_vkeyTable[] =
 #if defined(WIN32)
 #define VK(name) { VK_##name, _T(#name) }
 #elif defined(__linux__) || defined(__APPLE__)
-#define VK(name) { -1, _T(#name) }
+#define VK(name) { u_int8(~0), _T(#name) }
 #endif
 
 /*
